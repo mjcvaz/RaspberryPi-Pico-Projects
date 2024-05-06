@@ -12,7 +12,7 @@ path_prefix = "result/"
 filename = "%s_%.2i-%.2i-%i_%.2i-%.2i-%.2i" % ('ping',now.day,now.month,now.year,now.hour,now.minute,now.second)
 output_file = path_prefix + filename
 
-hosts = 'C:\Users\884103\github\mjcv-projects\python\hosts_imps.txt'
+hosts = "C:\Users\884103\github\mjcv-projects\python\hosts_imps.txt"
 hostsFile = open(hosts, "r")
 lines = hostsFile.readlines()
 fp=open(output_file,"w")
