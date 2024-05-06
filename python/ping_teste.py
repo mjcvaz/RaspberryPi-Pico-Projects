@@ -8,7 +8,7 @@ import time
 now = datetime.datetime.now()
 
 #path_prefix = "/usr/local/logs/scripts/python/cisco_cfg/"
-path_prefix = "C:\Users\884103\github\mjcv-projects\python\"
+path_prefix = 'C:\Users\884103\github\mjcv-projects\python\'
 filename = "%s_%.2i-%.2i-%i_%.2i-%.2i-%.2i" % ('ping',now.day,now.month,now.year,now.hour,now.minute,now.second)
 output_file = path_prefix + filename
 
