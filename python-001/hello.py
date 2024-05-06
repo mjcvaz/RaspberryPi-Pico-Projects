@@ -11,7 +11,7 @@ filename = "%s_%.2i-%.2i-%i_%.2i-%.2i-%.2i" % ('ping',now.day,now.month,now.year
 
 print (filename)
 
-data = datetime.datetime.now().strftime("%Y-%m-%d")
+data = datetime.datetime.now().strftime("%d-%m-%Y")
 hora = datetime.datetime.now().strftime("%H:%M:%S")
 
 registo = data + ":" + hora
