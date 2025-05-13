@@ -1,3 +1,3 @@
 ################################
-# Rega na varanda by Mario Vaz "
+# Rega na varanda by Mario Vaz #
 ################################
