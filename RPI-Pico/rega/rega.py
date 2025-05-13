@@ -11,8 +11,8 @@ from machine import Pin
 # SETTINGS
 ###############################################################################################
 # Configurações de rede
-ssid = 'ZON-C050'
-password = 'f80bccf0bd2a'
+ssid = 'meu-ssid'
+password = 'meu-pass'
 
 # Configuração de IP estático
 static_ip = "192.168.1.240"
