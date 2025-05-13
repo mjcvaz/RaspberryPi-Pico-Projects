@@ -6,7 +6,7 @@ Este é um sistema de **rega automática** controlado por uma **Raspberry Pi Pic
 
 ## 📷 Esquema da Solução
 
-![Esquema da solução](Diagram_of_an_automatic_irrigation_system_using_a_.png)
+![Esquema da solução](Diagram_of_an_automatic_irrigation_system.png)
 
 > Diagrama ilustrativo: a Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria. As ligações seguem o GPIO 16 para controlo do relé.
 
