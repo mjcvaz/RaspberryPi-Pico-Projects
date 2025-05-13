@@ -48,3 +48,33 @@ scheduled_times = [
     (19, 15),
     (20, 30)
 ]
+
+## 🕒 Horários de Rega
+
+A bomba ativa automaticamente nos seguintes horários (hora:minuto):
+
+```
+08:15, 11:45, 14:15, 17:30, 18:45, 19:15, 20:30
+```
+
+A duração de rega é de **15 segundos** por ciclo.
+
+## 💾 Como Usar
+
+1. Liga os componentes conforme o diagrama acima.
+2. Altera as variáveis `ssid`, `password`, `static_ip` e horários, se necessário.
+3. Carrega o código para o Raspberry Pi Pico W.
+4. Garante que o servidor NTP está acessível (usa-se IP fixo para maior estabilidade).
+5. Alimenta o circuito (por USB e 12V para a bomba).
+
+## ⚠️ Notas de Segurança
+
+- Certifica-te que a bomba e o relé suportam a corrente necessária.
+- Usa uma fonte de 12V confiável para alimentar a bomba.
+- Nunca toques nos fios expostos com o sistema energizado.
+- Protege o sistema contra humidade (caixa IP65 recomendada).
+
+## 👤 Autor
+
+**Mario Vaz**  
+Projeto criado em maio de 2025
