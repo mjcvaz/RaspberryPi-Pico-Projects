@@ -1,6 +1,6 @@
 # 💧 Rega na Varanda - Raspberry Pi Pico W
 
-Projeto desenvolvido por **Mario Vaz**, que utiliza o **Raspberry Pi Pico W** para automatizar a rega de uma varanda de forma inteligente e programada.
+Projeto desenvolvido por **Mário Vaz**, que utiliza o **Raspberry Pi Pico W** para automatizar a rega de uma varanda de forma inteligente e programada.
 
 ---
 
