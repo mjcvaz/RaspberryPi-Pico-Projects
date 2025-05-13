@@ -1,50 +1,42 @@
-# 💧 Rega na Varanda - Raspberry Pi Pico W
+# 🌿 Rega na Varanda — Raspberry Pi Pico W
 
-Projeto desenvolvido por **Mário Vaz**, que utiliza o **Raspberry Pi Pico W** para automatizar a rega de uma varanda de forma inteligente e programada.
-
----
-
-## 📋 Descrição
-
-Este script conecta-se a uma rede Wi-Fi, sincroniza o relógio interno do microcontrolador com um servidor NTP e ativa automaticamente uma bomba de água em horários pré-definidos. A bomba é acionada por um pino GPIO, e um LED embutido no Pico W fornece feedback visual sobre o estado do sistema.
+Este é um sistema de **rega automática** controlado por uma **Raspberry Pi Pico W**, que ativa uma bomba de água de 12V nos horários programados. Ideal para quem quer automatizar a rega de vasos ou pequenas hortas em varandas ou jardins.
 
 ---
 
-## ⚙️ Funcionalidades
+## 📷 Esquema da Solução
 
-- 📶 Conexão à rede Wi-Fi com IP estático
-- ⏰ Sincronização de horário via NTP (com fuso horário configurável)
-- 🕒 Agendamento de horários para rega
-- 🚿 Acionamento de bomba de água por tempo determinado
-- 💡 Feedback visual com LED
-- 🧼 Monitoramento contínuo do tempo para execução da rega
+![Esquema da solução](Diagram_of_an_automatic_irrigation_system_using_a_.png)
+
+> Diagrama ilustrativo: a Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria. As ligações seguem o GPIO 16 para controlo do relé.
 
 ---
 
-## 🔌 Requisitos
+## 🛠 Componentes Utilizados
 
-- Raspberry Pi Pico W
-- Bomba de água 5V (ou compatível)
-- Fonte de alimentação adequada
-- Módulo de relé ou transistor para acionar a bomba
-- Acesso a rede Wi-Fi
-
----
-
-## 🧠 Lógica de Funcionamento
-
-1. Liga e pisca o LED para indicar o início do processo.
-2. Conecta-se à rede Wi-Fi com IP estático.
-3. Sincroniza a hora com um servidor NTP.
-4. Entra num loop infinito onde:
-   - Verifica a hora atual.
-   - Se for um dos horários programados, ativa a bomba durante `X` segundos.
-   - Fora dos horários, garante que a bomba esteja desligada.
-   - Regista cada ação no terminal via `print()`.
+- Raspberry Pi Pico W  
+- Módulo relé 1 canal (compatível com 3.3V)  
+- Bomba de água 12V  
+- Bateria de 12V (ou fonte de alimentação)  
+- Resistores de proteção (opcional)  
+- Cabos Dupont e protoboard (ou solda)  
+- Conexão Wi-Fi com internet  
 
 ---
 
-## ⏲️ Horários Programados
+## ⚙️ Funcionalidades do Script
+
+- Conexão à rede Wi-Fi com IP estático  
+- Sincronização horária via NTP  
+- Ativação da bomba de água em horários programados  
+- LED da Pico W indica estado de atividade  
+- Lógica de segurança: bomba desativa-se automaticamente fora dos horários  
+
+---
+
+## 🕒 Horários Programados
+
+Os horários para rega são definidos como pares de hora e minuto no código:
 
 ```python
 scheduled_times = [
