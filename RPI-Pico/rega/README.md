@@ -58,6 +58,7 @@ A bomba ativa automaticamente nos seguintes horários (hora:minuto):
 ```
 
 A duração de rega é de **15 segundos** por ciclo.
+Ajustar a duração para obter a quantidade de água certa para cada ciclo.
 
 ## 💾 Como Usar
 
