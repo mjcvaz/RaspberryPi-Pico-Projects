@@ -62,7 +62,7 @@ A duração de rega é de **15 segundos** por ciclo.
 ## 💾 Como Usar
 
 1. Liga os componentes conforme o diagrama acima.
-2. Altera as variáveis `ssid`, `password`, `static_ip` e horários, se necessário.
+2. Altera as variáveis `ssid`, `password`, `static_ip` e horários, se necessário e gravar com o nome "main.py".
 3. Carrega o código para o Raspberry Pi Pico W.
 4. Garante que o servidor NTP está acessível (usa-se IP fixo para maior estabilidade).
 5. Alimenta o circuito (por USB e 12V para a bomba).
