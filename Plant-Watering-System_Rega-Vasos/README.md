@@ -14,10 +14,6 @@ Este é um sistema de **rega automática** controlado por uma **Raspberry Pi Pic
 
 > Esquema ilustrativo das ligações elétricas.
 
-![Esquema da solução com sensores (Upgrade)](Plant_watering_system_with_sensors_schematic.png)
-
-> Esquema ilustrativo das ligações elétricas: Para melhorar, a solução vai ter um upgrade introduzindo um sensor de humidade do solo nos vasos e um sensor de nivel de água no reservatório. O Raspberry Pi Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria de 12V. O Raspberry Pi Pico W usa os dois sensores, para decidir quando ativar o relé, se o nivel de humidade estiver baixo e houver água no reservatório e ativar o relé.
-
 ---
 
 ## 🛠 Componentes Utilizados
@@ -83,7 +79,21 @@ Ajustar a duração para obter a quantidade de água certa para cada ciclo.
 - Nunca toques nos fios expostos com o sistema energizado.
 - Protege o sistema contra humidade (caixa IP65 recomendada).
 
+```
+
+## 📷 Esquema da Solução Futura (Upgrade)
+
+![Esquema da solução com sensores (Upgrade)](Plant_watering_system_with_sensors_schematic.png)
+
+> Esquema ilustrativo das ligações elétricas: A solução vai ter um upgrade introduzindo, um sensor de humidade do solo nos vasos e um sensor de nivel de água no reservatório.
+> 
+> O Raspberry Pi Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria de 12V. O Raspberry Pi Pico W usa os dois sensores, para decidir quando ativar o relé, se o nivel de humidade estiver baixo e houver água no reservatório e ativar o relé.
+> 
+> Falta atualizar o script.
+
+```
+
 ## 👤 Autor
 
-**Mario Vaz**  
+**Mário Vaz**  
 Projeto criado em maio de 2025
