@@ -8,11 +8,15 @@ Este é um sistema de **rega automática** controlado por uma **Raspberry Pi Pic
 
 ![Diagrama da solução](Diagram_of_an_automatic_irrigation_system.png)
 
-> Diagrama ilustrativo: a Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria. As ligações seguem o GPIO 16 para controlo do relé.
+> Diagrama ilustrativo: O Raspberry Pi Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria de 12V. O GPIO 16 envia o sinal para controlo do relé que aciona a bomba de água para regar as plantas.
 
 ![Esquema da solução](Plant_watering_system_schematic.png)
 
-> Esquema ilustrativo: a Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria. As ligações seguem o GPIO 16 para controlo do relé.
+> Esquema ilustrativo das ligações elétricas.
+
+![Esquema da solução com sensores (Upgrade)](Plant_watering_system_with_sensors_schematic.png)
+
+> Esquema ilustrativo das ligações elétricas: Para melhorar, a solução vai ter um upgrade introduzindo um sensor de humidade do solo nos vasos e um sensor de nivel de água no reservatório. O Raspberry Pi Pico W controla um relé ligado à bomba de 12V, alimentada por uma bateria de 12V. O Raspberry Pi Pico W usa os dois sensores, para decidir quando ativar o relé, se o nivel de humidade estiver baixo e houver água no reservatório e ativar o relé.
 
 ---
 
